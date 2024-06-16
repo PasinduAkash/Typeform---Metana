@@ -21,7 +21,7 @@ export const Typeform = () => {
                 width="16"
               />
             </div>
-            <div>
+            <div className="w-full">
               {renderForm()}
               <div className="flex flex-col md:flex-row">
                 <button

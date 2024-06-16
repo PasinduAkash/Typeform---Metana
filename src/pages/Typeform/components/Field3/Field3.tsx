@@ -19,7 +19,6 @@ const Field3 = () => {
         <div className="">
           <div className="mb-6">
             <Select
-              closeMenuOnSelect={false}
               className=""
               options={countryOptions}
               isClearable
