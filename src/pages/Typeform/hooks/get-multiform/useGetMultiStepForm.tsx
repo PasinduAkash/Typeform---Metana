@@ -7,11 +7,11 @@ export const useGetMultiForm = () => {
   const [currentField, setCurrentField] = useState<number>(1);
 
   const nextField = () => {
-    return setCurrentField((prev) => prev + 1);
+    return setCurrentField((prev) => Math.min(prev + 1, 3));
   };
 
   const previousField = () => {
-    return setCurrentField((prev) => prev - 1);
+    return setCurrentField((prev) => Math.max(prev - 1, 1));
   };
 
   const renderForm = (): ReactNode => {
@@ -22,6 +22,8 @@ export const useGetMultiForm = () => {
         return <Field2 />;
       case 3:
         return <Field3 />;
+      default:
+        return <Field1 />;
     }
   };
 

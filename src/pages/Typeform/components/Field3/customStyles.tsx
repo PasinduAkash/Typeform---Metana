@@ -1,21 +1,21 @@
 export const customStyles = {
   control: (provided: any) => ({
     ...provided,
-    backgroundColor: "#ffff", // Background color of the search bar
-    border: "none", // Remove all borders
-    borderBottom: "2px solid #f1e2ff", // Only keep the bottom border
-    boxShadow: "none", // Remove the default box shadow
+    backgroundColor: "#ffff",
+    border: "none",
+    borderBottom: "2px solid #f1e2ff",
+    boxShadow: "none",
     borderRadius: 0,
     outline: 0,
     outlineColor: "red",
     padding: "0px",
     "&:hover": {
-      borderBottom: "2px solid #f1e2ff", // Bottom border color when hovering over the search bar
+      borderBottom: "2px solid #f1e2ff",
     },
   }),
   input: (provided: any) => ({
     ...provided,
-    color: "#cf9fff", // Text color of the search input
+    color: "#cf9fff",
     caretColor: "#cf9fff",
     fontSize: "30px",
     lineHeight: "24px",
@@ -23,16 +23,16 @@ export const customStyles = {
   }),
   placeholder: (provided: any) => ({
     ...provided,
-    color: "#f1e2ff", // Placeholder text color
+    color: "#f1e2ff",
     fontSize: "30px",
     lineHeight: "40px",
   }),
   clearIndicator: (provided: any) => ({
     ...provided,
-    color: "#cf9fff", // Change the color of the clear indicator (the "x" button) to red
+    color: "#cf9fff",
     cursor: "pointer",
     "&:hover": {
-      color: "#cf9fff", // Change color when hovering over the clear indicator
+      color: "#cf9fff",
     },
   }),
   dropdownIndicator: (provided: any) => ({
